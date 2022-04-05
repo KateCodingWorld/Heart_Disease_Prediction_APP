@@ -4,7 +4,7 @@ import numpy as np
 
 
 # read data file
-heartdisease = pd.read_csv('data\cleaned_dataset.csv')
+heartdisease = pd.read_csv('data/cleaned_dataset.csv')
 df = heartdisease.copy()
 
 
