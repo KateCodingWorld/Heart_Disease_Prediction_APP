@@ -16,7 +16,7 @@ col1, col2, col3 = st.columns([2,2,3])
 
 # left section showing a image
 with col1:
-    st.image('image\HEART.jpg', width=250)
+    st.image('image/HEART.jpg', width=250)
 
 # middle section showing text
 with col2:
@@ -147,11 +147,11 @@ with col3:
         prediction = load_pipe.predict(df_test)
         if prediction == 0:
             st.success('You have been taken care of your heart well!! 💖')
-            st.image('image\GOOD.jpg', width=300) 
+            st.image('image/GOOD.jpg', width=300) 
             st.balloons()
         else:
             st.warning('You should take better care of your heart... 💔')
-            st.image('image\BAD.jpg', width=300)
+            st.image('image/BAD.jpg', width=300)
             st.snow()
 
                 # add a retry button
