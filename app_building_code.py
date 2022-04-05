@@ -101,7 +101,7 @@ input_df = user_input_features()
 
 
 # combine existing dataframe with new input data
-heartdisease = pd.read_csv('data\cleaned_dataset.csv')
+heartdisease = pd.read_csv('data/cleaned_dataset.csv')
 heartdisease_X = heartdisease.drop(columns = ['HeartDisease'])
 df = pd.concat([input_df, heartdisease_X], axis=0)
 
